@@ -47,6 +47,10 @@ public class NoteListAdapter extends RecyclerView.Adapter<NoteListAdapter.NoteVi
         else return 0;
     }
 
+    public NoteEntity getNoteAtPosition(int position){
+        return mNoteList.get(position);
+    }
+
     public void setNoteList(List<NoteEntity> noteList){
         mNoteList = noteList;
         notifyDataSetChanged();
